@@ -1,6 +1,7 @@
 
 import './App.css';
 import People from './People';
+import CustomButton from './component/CustomButton';
 const array=["jackson","asmita","jitesh","sangoj"]
 
 // console.log("result",array.indexOf("jitesh"))
@@ -31,8 +32,8 @@ function App() {
          </div>
       ))} */}
       <People peopleData={array} result={data}/>
-     
-     
+   
+      
     </div>  
   );
 }

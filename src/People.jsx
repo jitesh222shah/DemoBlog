@@ -1,14 +1,20 @@
-import React from 'react'
-
-const People = ({ peopleData,result}) => {
-    console.log(peopleData)
-    console.log(result)
+import React from "react";
+import CustomButton from "./component/CustomButton";
+const People = ({ peopleData, result }) => {
+  // console.log(peopleData)
+  // console.log(result)
   return (
- <>
-    <div>People</div>
-       <div>hello</div>
- </>
-  )
-}
+    <>
+        <div className="detailsContainer">
+          <input placeholder="email address" type={"email"}/>
+          <input placeholder="passoword" type={"email"}/>
 
-export default People
+        </div>
+      <div style={{ padding: "1em" }}>
+        <CustomButton lable="login"/>
+      </div>
+    </>
+  );
+};
+
+export default People;
