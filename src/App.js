@@ -1,6 +1,9 @@
 
 import './App.css';
+import People from './People';
 const array=["jackson","asmita","jitesh","sangoj"]
+
+// console.log("result",array.indexOf("jitesh"))
 const data=[
   {
     name:"jackson",
@@ -22,8 +25,15 @@ const data=[
 function App() {
   return (
     <div className="App">
-      <h1>i am react app</h1>
-    </div>
+      {/* {data.map((each,index)=>(
+         <div className='mainContainer' style={{fontsize:"1em",letterSpacing:"0.2em"}}>
+         <h1>{each?.name}</h1>
+         </div>
+      ))} */}
+      <People peopleData={array} result={data}/>
+     
+     
+    </div>  
   );
 }
 
