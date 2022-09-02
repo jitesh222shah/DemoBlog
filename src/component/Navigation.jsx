@@ -1,11 +1,11 @@
 import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
-const Navigation = () => {
+const Navigation = ({navData}) => {
   return (
     <div className="navContainer">
       <div className="container">
-        <NavLink to={"/"} className="navClass">
+        {/* <NavLink to={"/"} className="navClass">
           Home
         </NavLink>
         <NavLink to={"/contact"} className="navClass">
@@ -13,7 +13,13 @@ const Navigation = () => {
         </NavLink>
         <NavLink to={"/about-us"} className="navClass">
           About
-        </NavLink>
+        </NavLink> */}
+        {/* CODE REFACTOR */}
+            {navData.map((each,index)=>(
+             <NavLink to={each?.path} className="navClass">
+            {each?.lable}
+           </NavLink>
+        ))}
       </div>
     </div>
   );
