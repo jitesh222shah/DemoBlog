@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
-const Navigation = ({navData}) => {
+const Navigation = ({ navData }) => {
   return (
     <div className="navContainer">
       <div className="container">
@@ -15,10 +15,10 @@ const Navigation = ({navData}) => {
           About
         </NavLink> */}
         {/* CODE REFACTOR */}
-            {navData.map((each,index)=>(
-             <NavLink to={each?.path} className="navClass">
+        {navData?.map((each, index) => (
+          <NavLink to={each?.path} className="navClass" >
             {each?.lable}
-           </NavLink>
+          </NavLink>
         ))}
       </div>
     </div>

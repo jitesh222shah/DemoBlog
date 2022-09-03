@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Home = () => {
   const data = [
     {
@@ -18,15 +20,7 @@ const Home = () => {
   return (
     <>
       <div>
-        {/* {data.map((each, index) => {
-          return <h1>{each.name}</h1>;
-        })} */}
-        {
-          <>
-            <h2>{resut.name}</h2>
-            <h3>{resut.place}</h3>
-          </>
-        }
+        
       </div>
     </>
   );
