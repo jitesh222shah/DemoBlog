@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import  {UserContext}  from "./App";
 const Home = () => {
   const data = [
     {
@@ -20,7 +20,16 @@ const Home = () => {
   return (
     <>
       <div>
-        
+        {
+          <UserContext.Consumer>
+            {
+              user=>{
+                return <h2>i am {user}</h2>
+              }
+            }
+
+          </UserContext.Consumer>
+        }
       </div>
     </>
   );
