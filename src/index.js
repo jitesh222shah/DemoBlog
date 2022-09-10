@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import {App }from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Hooks from "./hooks";
-import UseReducerHooks from "./UseReducerHooks";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <UseReducerHooks/>
+   <App/>
   </React.StrictMode>
 );
 
